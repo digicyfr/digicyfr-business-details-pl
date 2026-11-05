@@ -2,9 +2,21 @@
 
 Display business details entered by a site administrator in a server-rendered block or shortcode. It is free software under GPL-2.0-or-later and does not require a Digicyfr account or any external service.
 
+**Po polsku:** Dla polskich firm i osób prowadzących działalność: wpisz dane firmy raz i pokaż wybrane pola na stronie za pomocą bloku lub shortcode. Kontrola NIP obejmuje tylko format i sumę kontrolną.
+
+## Website guides and stable release
+
+- [Business Details PL: English overview and installation](https://www.digicyfr.com/en/wordpress-plugins/digicyfr-business-details-pl)
+- [Dane firmy PL: opis i instalacja po polsku](https://www.digicyfr.com/pl/wordpress-plugins/digicyfr-business-details-pl)
+- [Stable v0.1.0 release, ZIP and checksum](https://github.com/digicyfr/digicyfr-business-details-pl/releases/tag/v0.1.0)
+
+<a href="https://www.digicyfr.com/pl/wordpress-plugins/digicyfr-business-details-pl"><img src="https://www.digicyfr.com/images/wordpress-plugins/digicyfr-business-details-pl.png" alt="Example public business details block on a WordPress test page" width="520"></a>
+
+_Example screenshot from a disposable test site._
+
 ## Requirements and installation
 
-The 0.1.0 candidate has been developed for WordPress 7.1 and PHP 8.3. Compatibility with older versions is not claimed. Install the ZIP through **Plugins → Add New → Upload Plugin**, then open **Settings → Business Details PL**. Enter only the details you intend to show publicly.
+Version 0.1.0 was developed for WordPress 7.1 and PHP 8.3. Compatibility with older versions is not claimed. Install the ZIP through **Plugins → Add New → Upload Plugin**, then open **Settings → Business Details PL**. Enter only the details you intend to show publicly.
 
 For a page or post, insert the **Business Details PL** block and use its sidebar toggles to choose fields. The block renders saved data on the public page. In the editor it shows the selected field names, not the public values.
 
