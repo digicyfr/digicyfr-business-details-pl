@@ -1,12 +1,22 @@
-# Business Details PL 0.1.0 local QA record
+# Business Details PL 0.1.0 QA record
 
-Updated: 2026-11-05. This is a local release candidate, not a public release.
+Updated: 2026-11-05. A public GitHub prerelease exists; website production publication and manual accessibility review remain open.
 
 ## Exact artifact
 
 - ZIP: `dist/digicyfr-business-details-pl-0.1.0.zip` (12 files, mode 0644)
 - SHA-256: `91549cc23873085c24e728bfd030b038a8e1765ade3239c33d5c2e9f7519cb2c`
 - Standalone `tools/release.py build` and `verify` passed after the packaged documentation update. The ZIP has one `digicyfr-business-details-pl/` root and matches the manifest and source byte for byte. Compared with the prior `890ae44d` candidate, only bundled `README.md` and `readme.txt` changed; runtime files are byte-identical.
+
+## Post-tag browser QA on the exact public GitHub ZIP (2026-11-05)
+
+- Downloaded the `v0.1.0` prerelease ZIP and `.sha256` sidecar from GitHub; `sha256sum --check` passed. Standalone `tools/release.py verify --archive` matched all packaged source bytes and SHA-256 `91549cc23873085c24e728bfd030b038a8e1765ade3239c33d5c2e9f7519cb2c`.
+- Installed, activated, deactivated and reactivated that downloaded ZIP in a fresh disposable WordPress 7.1/PHP 8.3.33/MariaDB 11.4.13 site.
+- In Chromium, the administrator entered synthetic Polish business details and saved through the normal `options.php` form. The saved NIP normalized from `012-345-6789` to `0123456789`; the address `ul. Testowa 7\A` retained its backslash. All eight visible settings had associated labels. [Saved settings screenshot](evidence/0.1.0/settings-saved.png).
+- A second normal form submission with invalid repeated-digit NIP `1111111111` showed the NIP validation message and retained the previous valid NIP. [Invalid NIP screenshot](evidence/0.1.0/invalid-nip-kept.png).
+- A synthetic published page containing `digicyfr/business-details` with only `name` and `nip` selected rendered exactly those two populated fields. [Desktop](evidence/0.1.0/published-block.png) and [390px](evidence/0.1.0/published-block-390px.png) screenshots. The [settings page at 390px](evidence/0.1.0/settings-390px.png) and public page both had 390px document width with no horizontal page overflow.
+- In a new page editor, the Block Inserter found **Business Details PL** and clicking it inserted `digicyfr/business-details` with all eight default fields. [Editor screenshot](evidence/0.1.0/editor-inserted.png). This inserted draft was not published; the separate synthetic page above was published. No page JavaScript errors were recorded in either browser session.
+- The disposable site and volumes were removed. Manual NVDA/VoiceOver review, representative live business details, and older WordPress/PHP or multisite environments remain untested. NIP validation is mathematical only, not a registry or VAT lookup.
 
 ## Automated checks passed
 
