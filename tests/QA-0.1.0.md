@@ -18,6 +18,15 @@ Updated: 2026-11-05. A public GitHub prerelease exists; website production publi
 - In a new page editor, the Block Inserter found **Business Details PL** and clicking it inserted `digicyfr/business-details` with all eight default fields. [Editor screenshot](evidence/0.1.0/editor-inserted.png). This inserted draft was not published; the separate synthetic page above was published. No page JavaScript errors were recorded in either browser session.
 - The disposable site and volumes were removed. Manual NVDA/VoiceOver review, representative live business details, and older WordPress/PHP or multisite environments remain untested. NIP validation is mathematical only, not a registry or VAT lookup.
 
+## Exact-ZIP automated accessibility check (2026-11-05)
+
+On another fresh disposable WordPress 7.1/PHP 8.3.33 site, Playwright Chromium with axe-core 4.10.3 scanned WCAG 2 A/AA, 2.1 AA and 2.2 AA rules. [Machine-readable report](evidence/0.1.0/axe-audit-2026-11-05.json) records violations, incomplete checks, keyboard order, accessibility tree names and widths.
+
+- The plugin settings page and its form had **zero axe violations**. A synthetic public page and the `dl.digicyfr-business-details-pl` component had zero plugin-specific violations; the isolated component had zero violations and zero incomplete checks. The full public page had one `list` violation in the Twenty Twenty-Five navigation; the same rule/selector failed on a WordPress core post without this plugin's block.
+- Axe marked several admin form text and textarea color-contrast nodes **incomplete**, requiring visual or assistive-technology follow-up. The WordPress core General Settings page also had incomplete contrast nodes. This is not a pass claim for those contrast nodes.
+- Tab from Legal name reached Address; all eight setting fields had associated labels. The browser accessibility tree exposed Legal name, NIP and the synthetic values. The settings and public pages each had document width 390px at a 390px viewport, and no page JavaScript errors occurred.
+- This automated scan is not a human NVDA/VoiceOver test. The disposable site and volumes were removed; the published ZIP was unchanged.
+
 ## Automated checks passed
 
 - PHP syntax: all plugin and test PHP files with PHP 8.3.33.

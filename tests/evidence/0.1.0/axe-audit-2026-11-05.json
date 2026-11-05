@@ -1,0 +1,260 @@
+{
+  "date": "2026-11-05",
+  "zipSha256": "91549cc23873085c24e728bfd030b038a8e1765ade3239c33d5c2e9f7519cb2c",
+  "stack": "WordPress 7.1, PHP 8.3.33, MariaDB 11.4.13, Chromium 156",
+  "scans": {
+    "publicCore": {
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                ".is-responsive.items-justified-right.wp-block-navigation__container"
+              ],
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: ul"
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              "#comment"
+            ]
+          ]
+        }
+      ],
+      "passes": 26
+    },
+    "publicPlugin": {
+      "violations": [
+        {
+          "id": "list",
+          "impact": "serious",
+          "nodes": [
+            {
+              "target": [
+                ".is-responsive.items-justified-right.wp-block-navigation__container"
+              ],
+              "summary": "Fix all of the following:\n  List element has direct children that are not allowed: ul"
+            }
+          ]
+        }
+      ],
+      "incomplete": [],
+      "passes": 21
+    },
+    "publicComponent": {
+      "violations": [],
+      "incomplete": [],
+      "passes": 5
+    },
+    "adminCore": {
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              "label[for=\"new_admin_email\"]"
+            ],
+            [
+              "#new-admin-email-description"
+            ],
+            [
+              "#new-admin-email-description > strong"
+            ],
+            [
+              "tr:nth-child(7) > th"
+            ],
+            [
+              "label[for=\"users_can_register\"]"
+            ],
+            [
+              "label[for=\"default_role\"]"
+            ],
+            [
+              "#default_role"
+            ],
+            [
+              "label[for=\"WPLANG\"]"
+            ],
+            [
+              "#WPLANG"
+            ],
+            [
+              "label[for=\"timezone_string\"]"
+            ],
+            [
+              "#timezone_string"
+            ],
+            [
+              "#timezone-description"
+            ],
+            [
+              "abbr"
+            ],
+            [
+              "#utc-time"
+            ],
+            [
+              "#utc-time > code"
+            ],
+            [
+              "tr:nth-child(11) > th"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > label:nth-child(2) > .format-i18n.date-time-text"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > label:nth-child(2) > code"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > label:nth-child(4) > .format-i18n.date-time-text"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > label:nth-child(4) > code"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > label:nth-child(6) > .format-i18n.date-time-text"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > label:nth-child(6) > code"
+            ],
+            [
+              "label:nth-child(8) > .format-i18n.date-time-text"
+            ],
+            [
+              "label:nth-child(8) > code"
+            ],
+            [
+              "label:nth-child(10) > .format-i18n.date-time-text"
+            ],
+            [
+              "label:nth-child(10) > code"
+            ],
+            [
+              "label:nth-child(12) > .date-time-custom-text.date-time-text"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > p > strong"
+            ],
+            [
+              "tr:nth-child(11) > td > fieldset > p > .example"
+            ],
+            [
+              "tr:nth-child(12) > th"
+            ],
+            [
+              "tr:nth-child(12) > td > fieldset > label:nth-child(2) > .format-i18n.date-time-text"
+            ],
+            [
+              "tr:nth-child(12) > td > fieldset > label:nth-child(2) > code"
+            ],
+            [
+              "tr:nth-child(12) > td > fieldset > label:nth-child(4) > .format-i18n.date-time-text"
+            ],
+            [
+              "tr:nth-child(12) > td > fieldset > label:nth-child(4) > code"
+            ],
+            [
+              "tr:nth-child(12) > td > fieldset > label:nth-child(6) > .format-i18n.date-time-text"
+            ],
+            [
+              "tr:nth-child(12) > td > fieldset > label:nth-child(6) > code"
+            ],
+            [
+              "label:nth-child(8) > .date-time-custom-text.date-time-text"
+            ],
+            [
+              "p:nth-child(12) > strong"
+            ],
+            [
+              "p:nth-child(12) > .example"
+            ],
+            [
+              ".date-time-doc > a"
+            ],
+            [
+              "label[for=\"start_of_week\"]"
+            ],
+            [
+              "#start_of_week"
+            ]
+          ]
+        }
+      ],
+      "passes": 30
+    },
+    "adminPlugin": {
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              "#digicyfr-business-details-pl-address"
+            ],
+            [
+              "tr:nth-child(7) > th > label"
+            ],
+            [
+              "tr:nth-child(8) > th > label"
+            ],
+            [
+              ".wrap > p"
+            ],
+            [
+              "code"
+            ]
+          ]
+        }
+      ],
+      "passes": 27
+    },
+    "adminForm": {
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            [
+              "#digicyfr-business-details-pl-address"
+            ],
+            [
+              "tr:nth-child(7) > th > label"
+            ],
+            [
+              "tr:nth-child(8) > th > label"
+            ]
+          ]
+        }
+      ],
+      "passes": 10
+    }
+  },
+  "keyboard": {
+    "nameTabTo": "digicyfr-business-details-pl-address"
+  },
+  "widths": {
+    "public": {
+      "document": 390,
+      "viewport": 390
+    },
+    "admin": {
+      "document": 390,
+      "viewport": 390
+    }
+  },
+  "axNamesPresent": [
+    "Legal name",
+    "NIP",
+    "Przykład Sp. z o.o.",
+    "0123456789"
+  ],
+  "pageErrors": []
+}
