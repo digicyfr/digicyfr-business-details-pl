@@ -53,3 +53,10 @@ WordPress.org Plugin Check ran against the runtime-identical prior ZIP installed
 - The administrator settings form was submitted over HTTP in Chromium, exercising the normal `options.php` nonce path. A direct forged contributor POST was not tested; the integration fixture checks the page capability guard.
 - No upgrade migration path exists yet because 0.1.0 is the first version. Older WordPress/PHP versions and multisite network behavior were not tested.
 - PHPStan is not configured. Independent runtime review passed on the prior `890ae44d` ZIP. The current ZIP changed only bundled documentation, then passed fresh integration and editor insertion checks.
+
+## Live Digicyfr website delivery — 5 November 2026
+
+- The live [English](https://www.digicyfr.com/en/wordpress-plugins/digicyfr-business-details-pl) and [Polish](https://www.digicyfr.com/pl/wordpress-plugins/digicyfr-business-details-pl) pages both returned HTTP 200, with the current stable v0.1.0 ZIP link, matching SHA-256, screenshot and canonical metadata; neither carried `noindex`. Both URLs appeared in the live sitemap.
+- The live screenshot URL `/images/wordpress-plugins/digicyfr-business-details-pl.png` returned a PNG. `https://digicyfr.com/plugins/digicyfr-business-details-pl/` followed the `Update URI` redirect to the English detail page.
+- Following the ZIP and checksum links from the live pages returned the unchanged public GitHub release asset and sidecar. ZIP SHA-256: `91549cc23873085c24e728bfd030b038a8e1765ade3239c33d5c2e9f7519cb2c`. A freshly downloaded ZIP from the live Polish page passed deterministic ZIP inspection and a clean disposable WordPress 7.1/PHP 8.3.33 install, activation, deactivation and reactivation.
+- Website production commit: [`9dfb9728`](https://github.com/digicyfr/cyfr/commit/9dfb9728c92e7d4437cfe2f8368b54ce917c0008). Distribution remains a manual ZIP install/update; this is not a WordPress.org or automatic-update claim. Human screen-reader and representative-host checks remain follow-up work for broader claims.
