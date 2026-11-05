@@ -1,0 +1,20 @@
+{
+  "apiVersion": 3,
+  "name": "digicyfr/business-details",
+  "title": "Business Details PL",
+  "category": "widgets",
+  "icon": "id-alt",
+  "description": "Display selected business details entered in Settings.",
+  "textdomain": "digicyfr-business-details-pl",
+  "editorScript": "digicyfr-business-details-pl-editor",
+  "style": "digicyfr-business-details-pl-style",
+  "attributes": {
+    "fields": {
+      "type": "array",
+      "default": ["name", "address", "nip", "regon", "krs", "email", "phone", "website"]
+    }
+  },
+  "supports": {
+    "html": false
+  }
+}

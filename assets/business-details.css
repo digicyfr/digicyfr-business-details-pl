@@ -1,0 +1,26 @@
+.digicyfr-business-details-pl {
+	margin: 1em 0;
+}
+
+.digicyfr-business-details-pl__item {
+	display: grid;
+	grid-template-columns: minmax(8em, 12em) minmax(0, 1fr);
+	gap: 0.5em 1em;
+	margin-block: 0.35em;
+}
+
+.digicyfr-business-details-pl dt {
+	font-weight: 600;
+}
+
+.digicyfr-business-details-pl dd {
+	margin: 0;
+	overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+	.digicyfr-business-details-pl__item {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+}

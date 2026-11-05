@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Digicyfr Business Details PL 0.1.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pl_PL\n"
+
+msgid "Display owner-entered Polish business details with a block or shortcode."
+msgstr "Wyświetl dane polskiej firmy wpisane przez właściciela za pomocą bloku lub shortcode."
+
+msgid "Legal name"
+msgstr "Pełna nazwa firmy"
+
+msgid "Address"
+msgstr "Adres"
+
+msgid "NIP"
+msgstr "NIP"
+
+msgid "REGON"
+msgstr "REGON"
+
+msgid "KRS"
+msgstr "KRS"
+
+msgid "Email"
+msgstr "Adres e-mail"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Website"
+msgstr "Strona internetowa"
+
+msgid "Business identity"
+msgstr "Dane firmy"
+
+msgid "Enter the details you want to make available. Each block or shortcode chooses which populated fields to display. NIP validation checks its format and checksum only; it does not verify registration or VAT status."
+msgstr "Wpisz dane, które chcesz udostępnić. Każdy blok lub shortcode określa, które wypełnione pola wyświetlić. Weryfikacja NIP sprawdza wyłącznie format i sumę kontrolną; nie potwierdza rejestracji ani statusu VAT."
+
+msgid "Enter ten digits; spaces and hyphens are allowed. This is a local checksum check only."
+msgstr "Wpisz dziesięć cyfr; spacje i łączniki są dozwolone. To tylko lokalne sprawdzenie sumy kontrolnej."
+
+msgid "Enter a valid email address. The previous email was kept."
+msgstr "Wpisz poprawny adres e-mail. Zachowano poprzedni adres."
+
+msgid "Enter a full http or https website URL. The previous website was kept."
+msgstr "Wpisz pełny adres strony z http lub https. Zachowano poprzedni adres."
+
+msgid "NIP must contain ten digits with a valid checksum. The previous NIP was kept. This does not verify registration or VAT status."
+msgstr "NIP musi zawierać dziesięć cyfr i poprawną sumę kontrolną. Zachowano poprzedni NIP. Nie potwierdza to rejestracji ani statusu VAT."
+
+msgid "Business Details PL"
+msgstr "Dane firmy PL"
+
+msgid "You are not allowed to manage business details."
+msgstr "Nie masz uprawnień do zarządzania danymi firmy."
+
+msgid "Save business details"
+msgstr "Zapisz dane firmy"
+
+msgid "Shortcode example:"
+msgstr "Przykład shortcode:"
+
+msgid "Display selected business details entered in Settings."
+msgstr "Wyświetl wybrane dane firmy wpisane w Ustawieniach."
+
+msgid "Fields to display"
+msgstr "Pola do wyświetlenia"
+
+msgid "Populated selected fields appear on the published page."
+msgstr "Wybrane, wypełnione pola pojawią się na opublikowanej stronie."
+
+msgid "Select at least one field."
+msgstr "Wybierz co najmniej jedno pole."
