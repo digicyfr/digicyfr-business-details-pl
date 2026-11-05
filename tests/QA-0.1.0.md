@@ -1,6 +1,10 @@
 # Business Details PL 0.1.0 QA record
 
-Updated: 2026-11-05. A public GitHub prerelease exists; website production publication and manual accessibility review remain open.
+Updated: 2026-11-05. Version 0.1.0 is a stable self-hosted GitHub release. This QA record distinguishes automated checks from untested human and representative-site checks.
+
+## Release decision (2026-11-05)
+
+The published ZIP passed exact-artifact installation, integration, normal browser settings/public-block flows, keyboard and 390px checks, and plugin-owned axe-core scans. Digicyfr accepted browser automation for this release decision. Human screen-reader, inconclusive admin contrast, representative business-site, older WordPress/PHP and multisite checks remain untested; no WCAG conformance claim is made. The stable label does not change the tagged source, protected release branch or ZIP bytes.
 
 ## Exact artifact
 
@@ -10,7 +14,7 @@ Updated: 2026-11-05. A public GitHub prerelease exists; website production publi
 
 ## Post-tag browser QA on the exact public GitHub ZIP (2026-11-05)
 
-- Downloaded the `v0.1.0` prerelease ZIP and `.sha256` sidecar from GitHub; `sha256sum --check` passed. Standalone `tools/release.py verify --archive` matched all packaged source bytes and SHA-256 `91549cc23873085c24e728bfd030b038a8e1765ade3239c33d5c2e9f7519cb2c`.
+- Downloaded the `v0.1.0` ZIP and `.sha256` sidecar from GitHub; `sha256sum --check` passed. Standalone `tools/release.py verify --archive` matched all packaged source bytes and SHA-256 `91549cc23873085c24e728bfd030b038a8e1765ade3239c33d5c2e9f7519cb2c`.
 - Installed, activated, deactivated and reactivated that downloaded ZIP in a fresh disposable WordPress 7.1/PHP 8.3.33/MariaDB 11.4.13 site.
 - In Chromium, the administrator entered synthetic Polish business details and saved through the normal `options.php` form. The saved NIP normalized from `012-345-6789` to `0123456789`; the address `ul. Testowa 7\A` retained its backslash. All eight visible settings had associated labels. [Saved settings screenshot](evidence/0.1.0/settings-saved.png).
 - A second normal form submission with invalid repeated-digit NIP `1111111111` showed the NIP validation message and retained the previous valid NIP. [Invalid NIP screenshot](evidence/0.1.0/invalid-nip-kept.png).
@@ -45,7 +49,7 @@ WordPress.org Plugin Check ran against the runtime-identical prior ZIP installed
 
 ## Remaining review
 
-- A full screen-reader run remains untested. Complete it before public website release; interactive block-editor insertion passed on a runtime-identical ZIP before the final documentation-only rebuild.
+- A full human screen-reader run remains untested. Interactive block-editor insertion passed on the exact public ZIP as documented above; automated checks do not replace human assistive-technology review.
 - The administrator settings form was submitted over HTTP in Chromium, exercising the normal `options.php` nonce path. A direct forged contributor POST was not tested; the integration fixture checks the page capability guard.
 - No upgrade migration path exists yet because 0.1.0 is the first version. Older WordPress/PHP versions and multisite network behavior were not tested.
 - PHPStan is not configured. Independent runtime review passed on the prior `890ae44d` ZIP. The current ZIP changed only bundled documentation, then passed fresh integration and editor insertion checks.
